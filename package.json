@@ -1,0 +1,11 @@
+{
+	"name": "cake",
+	"version": "1.0.0",
+	"description": "2d webgl rendering framework",
+	"main": "src/cake.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Ibrahim Fadel",
+	"license": "ISC"
+}
