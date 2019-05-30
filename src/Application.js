@@ -15,6 +15,8 @@ export class CakeApplication {
 		this.createCanvas();
 		this.initShaders();
 		this.initShaderProgram();
+
+		this.Graphics = new Cake.Graphics(this);
 	}
 
 	createCanvas() {

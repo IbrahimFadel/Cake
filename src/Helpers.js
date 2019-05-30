@@ -25,4 +25,9 @@ export class Helpers {
 		});
 		return floats;
 	}
+
+	mapCoordToVert(coord, max, min) {
+		const vert = parseFloat((coord - max) / (min - max) - 0.5);
+		return vert;
+	}
 }

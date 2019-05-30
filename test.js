@@ -6,3 +6,5 @@ const app = new Cake.Application({
 	colour: [255, 0, 0, 100]
 });
 document.body.appendChild(app.canvas);
+
+app.Graphics.drawTriangle(400, 600, 0, 600, 800, 600);
