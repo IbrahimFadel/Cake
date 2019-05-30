@@ -18,32 +18,26 @@ export class Graphic {
 		if (this.type === 0) {
 			const x1 = Cake.Helpers.mapCoordToVert(
 				this.settings.x1,
-				0,
 				this.app.canvas.width
 			);
 			const x2 = Cake.Helpers.mapCoordToVert(
 				this.settings.x2,
-				0,
 				this.app.canvas.width
 			);
 			const x3 = Cake.Helpers.mapCoordToVert(
 				this.settings.x3,
-				0,
 				this.app.canvas.width
 			);
 			const y1 = Cake.Helpers.mapCoordToVert(
 				this.settings.y1,
-				0,
 				this.app.canvas.height
 			);
 			const y2 = Cake.Helpers.mapCoordToVert(
 				this.settings.y1,
-				0,
 				this.app.canvas.height
 			);
 			const y3 = Cake.Helpers.mapCoordToVert(
 				this.settings.y1,
-				0,
 				this.app.canvas.height
 			);
 			console.log(x1, y1);
@@ -67,13 +61,13 @@ export class Graphic {
 			// 	1.0
 			// ];
 			this.vertices = [
-				0.0,
+				0,
 				0.5,
 				1.0,
 				0.0,
 				0.0,
 				-0.5,
-				0.5,
+				-0.5,
 				0.0,
 				1.0,
 				0.0,

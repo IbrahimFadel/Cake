@@ -26,8 +26,8 @@ export class Helpers {
 		return floats;
 	}
 
-	mapCoordToVert(coord, max, min) {
-		const vert = parseFloat((coord - max) / (min - max) - 0.5);
+	mapCoordToVert(coord, max) {
+		const vert = ((coord - 0) / (max - 0)) * (1 + 1) - 1;
 		return vert;
 	}
 }
