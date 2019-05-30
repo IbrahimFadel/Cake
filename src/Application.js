@@ -3,6 +3,7 @@ import { vertexShaderText, fragmentShaderText } from "./Shaders.js";
 
 export class CakeApplication {
 	constructor(config) {
+		this.VERSION = "0.0.1";
 		this.config = config;
 		this.WIDTH = this.config.width || 800;
 		this.HEIGHT = this.config.height || 600;
@@ -12,11 +13,27 @@ export class CakeApplication {
 		this.vertexShader = undefined;
 		this.fragmentShader = undefined;
 		this.shaderProgram = undefined;
+		this.printInfo();
 		this.createCanvas();
 		this.initShaders();
 		this.initShaderProgram();
 
 		this.Graphics = new Cake.Graphics(this);
+	}
+
+	printInfo() {
+		const consoleStyles = [
+			"background: linear-gradient(#D33106, #571402)",
+			"border: 1px solid #3E0E02",
+			"color: white",
+			"display: block",
+			"text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3)",
+			"box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset, 0 5px 3px -5px rgba(0, 0, 0, 0.5), 0 -13px 5px -10px rgba(255, 255, 255, 0.4) inset",
+			"line-height: 40px",
+			"text-align: center",
+			"font-weight: bold"
+		].join(";");
+		console.log("%c Cake - Version " + this.VERSION + " ", consoleStyles);
 	}
 
 	createCanvas() {

@@ -26,8 +26,10 @@ export class Helpers {
 		return floats;
 	}
 
-	mapCoordToVert(coord, max) {
-		const vert = ((coord - 0) / (max - 0)) * (1 + 1) - 1;
+	mapCoordToVert(coord, max, type) {
+		let vert = undefined;
+		if (type === "w") vert = ((coord - 0) / (max - 0)) * (1 + 1) - 1;
+		else if (type === "h") vert = ((coord - 0) / (max - 0)) * (-1 - 1) + 1;
 		return vert;
 	}
 }
